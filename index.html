@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Todo-List</title>
+</head>
+<body class="bg-purple-400">
+    <section>
+        <div class="container p-10">
+            <div class="">
+                <h1 class="text-6xl font-bold text-white text-center mb-12 mt-24">To-Do List🧩</h1>
+            </div>
+                <div class="ml- lg:ml-[390px] ">
+                        <input id="input" type="text" placeholder="Task to be done" class="rounded-xl focus:outline-none px-3 py-3 w-1/2 ml-10 lg:ml-24">
+                        <button onclick="add()" class="bg-blue-500 px-5 py-3 rounded-xl text-white font-semibold text-lg ml-2 hover:bg-blue-700">Add</button>
+                </div>
+                <div class="lg:ml-[395px] lg:w-1/2  mx-auto rounded-2xl  py-6 mt-3">
+                    <ul id="list" class="">
+                       <li class="  ml-5  flex">
+                        <p  id="para" class="text-5xl font-bold my-2 ml-[150px] rounded-2xl text-white">Remember the Task🎯</p>
+                        <!-- <button  onclick="edit()" class=" justify-center bg-blue-500 px-5 py-1 rounded-2xl text-white font-bold text-lg mt-1">Edit</button>
+                        <button onclick="remove(event)" id='remove' class=" bg-red-500 px-5 py-1 rounded-2xl text-white font-bold text-lg">delete</button> -->
+                        
+                    </li>
+                    
+                    </ul>
+                </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
